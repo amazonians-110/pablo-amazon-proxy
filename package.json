@@ -1,0 +1,47 @@
+{
+  "name": "pablo-amazon-proxy",
+  "version": "1.0.0",
+  "description": "Combine all team modules",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "postinstall": "",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amazonians-110/pablo-amazon-proxy.git"
+  },
+  "keywords": [
+    "proxy",
+    "server",
+    "amazon"
+  ],
+  "author": "Pablo Frias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amazonians-110/pablo-amazon-proxy/issues"
+  },
+  "homepage": "https://github.com/amazonians-110/pablo-amazon-proxy#readme",
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}
