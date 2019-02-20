@@ -1,0 +1,9 @@
+body, header, footer, #proxy_main {
+  width:100%;
+  min-width: 1000px;
+  margin:0px;
+}
+
+aside img {
+  width: 75%;
+}

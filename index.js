@@ -5,7 +5,7 @@ const PORT = 8000;
 
 const app = express();
 
-app.use(morgan('combined'));
+app.use(morgan('tiny'));
 
 app.use(express.static(`${__dirname}/src/`));
 
