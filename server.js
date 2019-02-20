@@ -1,13 +1,16 @@
 const morgan = require('morgan');
 const express = require('express');
-const path = require('path');
 
 const PORT = 8000;
 
 const app = express();
 
-app.use(morgan);
+app.use(morgan('combined'));
 
-app.use(express.static(`${path.dirname}/dist`));
+app.use(express.static(`${__dirname}/src/`));
+
+app.get('*', (req, res) => {
+  res.sendFile(`${__dirname}/src/index.html`);
+});
 
 app.listen(PORT, console.log(`listening on port ${PORT}`));
