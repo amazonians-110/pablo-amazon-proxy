@@ -4,9 +4,9 @@
   "description": "Combine all team modules",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "postinstall": "",
-    "start": "nodemon"
+    "postinstall": "mkdir dist && cp ./src/index.html ./dist/index.html",
+    "dev-start": "nodemon",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,18 +24,11 @@
   },
   "homepage": "https://github.com/amazonians-110/pablo-amazon-proxy#readme",
   "dependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "axios": "^0.18.0",
-    "babel-loader": "^8.0.5",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.10",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "nodemon": "^1.18.10"
   },
   "devDependencies": {
     "eslint": "^5.14.1",
